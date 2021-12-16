@@ -12,10 +12,10 @@
 <form method="post" action="${pageContext.request.contextPath}/login">
     Please enter your login: <input type="text" name="login" required><br>
     Please enter your password: <input type="password" name="password" required><br>
-    <button style="color: #207ca1;font-size: 40px; background-color: dimgray;border: none" type="submit">
+    <button style="color: #f5f5f5;font-size: 40px; background-color: #207ca1;border: none" type="submit">
         Login
     </button>
-    <button style="color: #207ca1;font-size: 40px; background-color: dimgray;border: none" type="submit">
+    <button style="color: #f5f5f5;font-size: 40px; background-color: #207ca1;border: none" type="submit">
         <a style="text-decoration: none; color: whitesmoke" href="${pageContext.request.contextPath}/drivers/add">
             Add driver
         </a>

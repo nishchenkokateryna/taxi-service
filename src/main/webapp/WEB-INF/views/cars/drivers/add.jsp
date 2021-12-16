@@ -18,7 +18,11 @@
     </tr>
     <tr>
         <td>
-            <input type="number" name="car_id" form="car" required>
+            <select name="car_id">
+                <c:forEach items="${cars}" var="car">
+                    <option value="${car.id}">${car.model}</option>
+                </c:forEach>
+            </select>
         </td>
         <td>
             <input type="number" name="driver_id" form="car" required>
@@ -30,7 +34,7 @@
 </table>
 <%@include file="../../header.jsp"%>
 <br/>
-<button style="color: #207ca1;font-size: 40px; background-color: dimgray;border: none" type="submit">
+<button style="color: #f5f5f5;font-size: 40px; background-color: #207ca1;border: none" type="submit">
     <a style="text-decoration: none; color: #f5f5f5" href="${pageContext.request.contextPath}/index">
         Back to Index page
     </a>

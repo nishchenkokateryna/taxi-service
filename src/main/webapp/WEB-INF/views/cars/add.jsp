@@ -30,7 +30,7 @@
 </table>
 <%@include file="../header.jsp"%>
 <br/>
-<button style="color: #207ca1;font-size: 40px; background-color: dimgray;border: none" type="submit">
+<button style="color: #f5f5f5;font-size: 40px; background-color: #207ca1;border: none" type="submit">
     <a style="text-decoration: none; color: #f5f5f5" href="${pageContext.request.contextPath}/index">
         Back to Index page
     </a>
