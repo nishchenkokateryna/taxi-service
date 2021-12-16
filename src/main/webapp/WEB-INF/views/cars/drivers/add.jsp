@@ -25,7 +25,10 @@
             </select>
         </td>
         <td>
-            <input type="number" name="driver_id" form="car" required>
+            <select name="driver_id">
+                <c:forEach items="${drivers}" var="driver">
+                <option value="${driver.id}">${driver.name}</option>
+                </c:forEach>
         </td>
         <td>
             <input type="submit" name="add" form="car">
