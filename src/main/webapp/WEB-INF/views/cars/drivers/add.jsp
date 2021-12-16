@@ -11,16 +11,30 @@
 <form method="post" id="car" action="${pageContext.request.contextPath}/cars/drivers/add"></form>
 <h1 class="table_dark">Add driver to car:</h1>
 <table border="1" class="table_dark">
-    Driver: <select name="driver_id">
-    <c:forEach items="${drivers}" var="driver">
-        <option value="${driver.id}">${driver.name}</option>
-    </c:forEach>
-</select>
-    Car: <select name="car_id">
-    <c:forEach items="${cars}" var="car">
-        <option value="${car.id}">${car.model}</option>
-    </c:forEach>
-</select>
+    <tr>
+        <th>Car ID</th>
+        <th>Driver ID</th>
+        <th>Add</th>
+    </tr>
+    <tr>
+        <td>
+            Driver: <select name="driver_id">
+            <c:forEach items="${drivers}" var="driver">
+            <option value="${driver.id}">${driver.name}</option>
+            </c:forEach>
+        </select>
+        </td>
+        <td>
+            Car: <select name="car_id">
+            <c:forEach items="${cars}" var="car">
+                <option value="${car.id}">${car.model}</option>
+            </c:forEach>
+        </select>
+        </td>
+        <td>
+            <input type="submit" name="add" form="car">
+        </td>
+    </tr>
 </table>
 <%@include file="../../header.jsp"%>
 <br/>
