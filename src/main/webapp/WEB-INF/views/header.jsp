@@ -5,7 +5,7 @@
 </head>
 <body>
 <br/>
-<button style="color: aliceblue;font-size: 50px; background-color: dimgray;border: none" type="submit">
+<button style="color: #207ca1;font-size: 40px; background-color: dimgray;border: none" type="submit">
     <a style="text-decoration: none; color: whitesmoke" href="${pageContext.request.contextPath}/logout">
         Logout
     </a>
