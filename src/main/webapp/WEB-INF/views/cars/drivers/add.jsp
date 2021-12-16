@@ -18,14 +18,14 @@
     </tr>
     <tr>
         <td>
-            Driver: <select name="driver_id">
+            <select name="driver">
             <c:forEach items="${drivers}" var="driver">
             <option value="${driver.id}">${driver.name}</option>
             </c:forEach>
         </select>
         </td>
         <td>
-            Car: <select name="car_id">
+            <select name="car">
             <c:forEach items="${cars}" var="car">
                 <option value="${car.id}">${car.model}</option>
             </c:forEach>
