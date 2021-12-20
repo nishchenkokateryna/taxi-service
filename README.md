@@ -38,5 +38,5 @@ in the file from `/util/ConnectionUtil.java` to the ones you specified when inst
 to absolute path to `.log` file
 7. Finally, you can start the application
 
-##Or you can just check it out following this link
+##Also, you can just check it out following this link
 https://stark-waters-58172.herokuapp.com/index
