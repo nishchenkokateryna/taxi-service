@@ -1,6 +1,7 @@
 package taxi.controller.car;
 
 import java.io.IOException;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,6 +24,10 @@ public class AddDriverToCarController extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        List<Car> cars = carService.getAll();
+        List<Driver> drivers = driverService.getAll();
+        req.setAttribute("drivers", drivers);
+        req.setAttribute("cars", cars);
         req.getRequestDispatcher("/WEB-INF/views/cars/drivers/add.jsp").forward(req, resp);
     }
 

@@ -4,11 +4,11 @@
 </style>
 <html>
 <head>
-    <title>Taxi</title>
+    <title>Index page</title>
 </head>
 <body>
 <form method="post" id="redirect"></form>
-<h1 class="table_dark">Taxi Service</h1>
+<h1 class="table_dark">Welcome to taxi service</h1>
 <table class="table_dark">
     <tr>
         <th>Redirect to</th>

@@ -45,8 +45,8 @@
 </table>
 <%@include file="../header.jsp"%>
 <br/>
-<button style="color: aliceblue;font-size: 50px; background-color: dimgray;border: none" type="submit">
-    <a style="text-decoration: none; color: whitesmoke" href="${pageContext.request.contextPath}/index">
+<button style="color: #f5f5f5;font-size: 40px; background-color: #207ca1;border: none" type="submit">
+    <a style="text-decoration: none; color: #f5f5f5" href="${pageContext.request.contextPath}/index">
         Back to Index page
     </a>
 </button>

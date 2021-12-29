@@ -27,7 +27,7 @@ Project based on 3-layer architecture:
 * JSTL
 * Maven Checkstyle Plugin
 
-## How to start taxi service:
+## How to start taxi service locally:
 1. Install and configure Apache Tomcat
 2. Install  and configure MySQL and MySQL Workbench
 3. Fork and clone this project
@@ -37,3 +37,6 @@ in the file from `/util/ConnectionUtil.java` to the ones you specified when inst
 6. Also, you need change path in the `src/main/resources/log4j2.xml` at line `File name = "File" fileName = "logs\app.log"`
 to absolute path to `.log` file
 7. Finally, you can start the application
+
+##Also, you can just check it out following this link
+https://stark-waters-58172.herokuapp.com/index
